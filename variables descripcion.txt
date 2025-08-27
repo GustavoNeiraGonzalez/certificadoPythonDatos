@@ -1,0 +1,52 @@
+VARIABLES CUANTITATIVAS
+Las variables CUANTITATIVAS capturan valores numéricos con un
+sentido aritmético (es decir, se pueden sumar, restar,
+multiplicar, etc).
+
+Estas se clasifican en variables DISCRETAS, esto es, que no
+pueden tomar valores entre 2 valores consecutivos, es decir,
+poseen la característica de tomar valores enteros. Por ejemplo,
+Ia cantidad de cuerdas de un instrumento. La guitarra tiene 5
+cuerdas y no hay una cuerda 2,5, así el número de cuerda de un
+instrumento es una variable discreta. Otro ejemplo son los
+cursos que se aprobaron. Puedes aprobar 3, 4, 5, cantidad de
+cursos, pero no tiene sentido aprobar 3,02 cursos.
+
+(EJEMPLO!!!!!!
+Evalúe el servicio ofrecido en una escala de 1 a 5
+Muy malo<- 1 2 3 4 5 ->Muy bueno
+
+Aunque pudiera parecer una variable discreta, lo cierto es que no se
+puede afirmar que alguien que marca 4, le gustó el servicio más que
+quien marcó 2, porque las preferencias son subjetivas, y no
+necesariamente compatibles entre sujetos. Así, si bien podemos
+reemplazar las etiquetas o palabras por números (en este caso valores
+entre 1 y 5), estas no pueden simplemente promediarse o aplicar otro
+cálculo.
+Existen formas apropiadas de resumir la información según el tipo de
+variable que se tenga, lo que veremos en los siguientes apartados.
+Ahora volvamos al código.
+1!!!!!!))
+
+
+
+Junto a esto tenemos las variables CONTINUAS las que sí
+pueden tomar valores intermedios, como el peso, la estatura,
+la tasa de crecimiento, etc. Por ejemplo la hora avanza
+continuamente, entre las 9 y las 10 hay valores reales de la
+hora.
+--------------
+VARIABLES CUALITATIVAS
+Las variables cualitativas si bien pueden ser representadas
+numéricamente, no tienen un sentido aritmético (no se
+pueden sumar o realizar otras operaciones).
+
+En este caso existen las variables NOMINALES, categorías o
+etiquetas que identifican un objeto, por ejemplo, su nombre,
+su marca, Ia propiedad activa de un fármaco, etc.
+
+Por último, tenemos las variables ORDINALES, etiquetas que
+presentan una jerarquía u orden. Por ejemplo, el grado de
+acuerdo con una política (en desacuerdo, neutral, de acuerdo),
+el orden de la educación (primaria, secundaria, terciaria), la
+calidad de un servicio (malo, regular, bueno, muy bueno).
