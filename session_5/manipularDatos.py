@@ -1,6 +1,7 @@
 import pandas as pd
 
 casen = pd.read_csv("casen_2017.csv", sep=";",encoding='unicode_escape')
+casen = pd.read_csv("casen_2017.csv", sep="/")
 
 """
 La función ".read_csv()" recibe 3 parámetros: el nombre del archivo que queremos importar, el símbolo que
@@ -52,4 +53,38 @@ casen.loc[(casen["sexo"]=="Mujer") & (casen["esc"]>12)]
 También podemos hacer consultas más complejas, como por ejemplo, filtrar a todas las mujeres con
 más de 12 años de escolaridad, para lo cual usaremos operadores lógicos. Aunque se ven distintos de
 los operadores booleanos de Python, tienen la misma lógica, donde and es "&" y or es "l"
+"""
+casen.iloc[10,3]
+"""
+También podemos buscar datos en las tablas por
+coordenadas, como el número de fila y columna,
+por ejemplo, si queremos recuperar Ia fila 10 de Ia
+columna 3, lo podemos hacer en el ejemplo de arriba
+ """
+casen.iloc[:,[2, 5, 6]] 
+"""
+O podemos recuperar ciertas columnas o filas
+específicas, en este caso, recuperaremos la
+columna 25 6:
+    
+El símbolo de dos puntos ":" en la posición de las
+filas de Ia propiedad .iloc[], indica "todos", esto es,
+tráeme "todas las filas" de las columnas 2, 5 y 6.
+"""
+casen["mayorA18"] = casen.edad > 18
+casen["mayorA18"]
+
+"""
+con casen["mayorA18"] = casen.edad >18 
+estamos creando otra columna llamada mayorA18 donde se verifica si es mayor de edad o no
+guardandolo como true o false
+"""
+casen.describe()
+"""
+Junto con constatar que es lo que tiene el dataframe, también podemos obtener
+algunos estadísticos descriptivos para hacernos la idea de la distribución de los datos con la funcion
+.describe()
+
+Esto nos da algunas métricas que hemos visto en las sesiones anteriores corno el promedio, la desviación
+estándar, o los respectivos cuantiles, entre ellos Ia mediana 
 """
