@@ -1,7 +1,7 @@
 import pandas as pd
 
 casen = pd.read_csv("casen_2017.csv", sep=";",encoding='unicode_escape')
-casen = pd.read_csv("casen_2017.csv", sep="/")
+casen = pd.read_csv("casen_2017.csv", sep=";",encoding='unicode_escape')
 
 """
 La función ".read_csv()" recibe 3 parámetros: el nombre del archivo que queremos importar, el símbolo que
